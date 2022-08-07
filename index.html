@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My TO-DO App</title>
+        <script src="https://kit.fontawesome.com/f93c5f80de.js" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <link rel="stylesheet" href="style.css">
+    <body>
+        <div id="main-container">
+            <div id="heading"><h1>TODO App</h1></div>
+
+            <div id="input-section">
+                <div id="description">
+                    <div id="description-heading">DESCRIPTION</div>
+                    <div id="task-input"><input id ="add" type="text" placeholder="What Do You Want To Add ?"></div>
+                </div>
+                <div id="category">
+                    <div id="category-heading">CATEGORY</div>
+                    <div id="drop-down">
+                        <select name="select" id="select-drop-down">
+                            <option value="ChooseACategory">Choose a Category</option>
+                            <option value="Personal">Personal</option>
+                            <option value="Work">Work</option>
+                            <option value="School">School</option>
+                            <option value="Cleaning">Cleaning</option>
+                            <option value="Other">Other</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="due-date">
+                    <div id="due-date-heading">DUE-DATE</div>
+                    <div id="date-drop-down">
+                        <input type="date" id="task-date" name="task-date">
+                    </div>
+                </div>
+            </div>
+
+            <div id="button-section">
+                <div id="add-task" class="add-task">
+                    <!-- <i class="fa-solid fa-plus add-task"></i> -->
+                    <p class="add-task">ADD</p>
+                </div>
+                <div id="delete-task" class="delete-task">
+                    <!-- <i class="fa-solid fa-trash-can delete-task"></i> -->
+                    <p class="delete-task">DELETE</p>
+                </div>
+            </div>
+
+            <div id="total-task"><p>Total Task : <span id="task-counter">0</span></p></div>
+
+            <div id="task-added-section">
+                <ul id="list">
+                    <!-- <li id="one-task-list">
+                        <div id="check-box"><input type="checkbox" class="custom-checkbox"></div>
+                        <div id="main-detail-of-task">
+                            <div id="task-detail"><p>School are reopening</p></div>
+                            <div id="task-deadline-date">
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <p id="deadline">MAY 23, 2022</p>
+                            </div>
+                        </div>
+                        <div id="task-type"><div>Personal</div></div>
+                    </li>       -->
+                </ul>
+            </div>
+        </div>
+
+
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

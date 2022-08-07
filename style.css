@@ -1,0 +1,449 @@
+body
+{
+    margin: 0;
+    font-family: sans-serif;
+    background-color: gray;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+#main-container
+{
+    width: 60%;
+    height: 100%;
+    background-color: white;
+}
+
+#heading
+{
+    text-align: center;
+}
+
+/**input section start**/
+#input-section
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#description
+{
+    width: 100%;
+    height: 50%;
+    border-top: 2px solid black;
+    margin-bottom: 10px;
+    /* background-color: blueviolet; */
+}
+
+#description #description-heading
+{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#task-input
+{
+    padding-left: 10px;
+}
+
+#task-input input
+{
+    width: 96%;
+    padding: 4px;
+    border: none;
+    border-top: 1px solid black;
+    outline: none;
+}
+
+#category
+{
+    width: 49.9%;
+    /* height: 50%; */
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    margin-bottom: 10px;
+    /* background-color: aquamarine; */
+}
+
+#category #category-heading
+{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#drop-down
+{
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+}
+
+#drop-down select
+{
+    border: none;
+    border-top: 1px solid black;
+    outline: none;
+}
+
+#drop-down select:hover
+{
+    cursor: pointer;
+}
+
+
+#drop-down #select-drop-down
+{
+    width:91.5%;
+    padding: 5px;
+    font-weight: bold;
+}
+
+#due-date
+{
+    width: 49.8%;
+    /* height: 50%; */
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
+    /* background-color: yellowgreen; */
+}
+
+#due-date #due-date-heading
+{
+    padding-left: 10px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+#date-drop-down
+{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+
+#date-drop-down #task-date
+{
+    width:90%;
+    padding: 5px;
+    border: none;
+    border-top: 1px solid black;
+    outline: none;
+}
+
+#date-drop-down #task-date:hover
+{
+    cursor: pointer;
+}
+
+/**input section end**/
+
+/**button section starts**/
+#button-section
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+    /* background-color: green; */
+}
+
+#add-task
+{
+    width: 20%;
+    height: 50%;
+    background-color: gray;
+    margin: 4px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+#add-task:hover
+{
+    box-shadow: 2px 2px 10px 2px black;
+    cursor: pointer;
+}
+
+#delete-task
+{
+    width: 20%;
+    height: 50%;
+    background-color: rgb(224, 41, 41);
+    margin: 4px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+}
+
+#delete-task:hover
+{
+    box-shadow: 2px 2px 10px 2px red;
+    cursor: pointer;
+}
+
+#total-task
+{
+    margin: 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+/**button section ends**/
+
+/**added task section started**/
+
+#task-added-section
+{
+    width: 100%;
+    /* height: 35%; */
+    /* background-color: blue; */
+    margin: 0;
+    overflow: auto;
+}
+
+ul
+{
+    list-style-type: none;
+}
+
+#one-task-list
+{
+    width: 95%;
+    height: 20%;
+    margin-top: 2px;
+    /* background-color: blueviolet; */
+    border-top: 2px solid black;
+    display: flex;
+}
+
+#one-task-list:hover
+{
+    background-color: rgb(186, 186, 186);
+}
+
+#check-box
+{
+    width: 5%;
+    /* background-color: aquamarine; */
+    text-align: center;
+}
+
+#check-box input
+{
+    margin-top: 30%;
+    width: 60%;
+    height: 60%;
+}
+
+#check-box input:hover
+{
+    cursor: pointer;
+}
+
+#main-detail-of-task
+{
+    /* background-color: beige; */
+    width: 80%;
+}
+
+#task-detail
+{
+    width: 100%;
+    /* background-color: aqua; */
+}
+
+#task-detail p 
+{
+    margin: 0;
+    padding-left: 4px;
+    padding-top: 5px;
+    font-weight: bold;
+}
+
+#task-deadline-date
+{
+    width: 100%;
+    height: 50%;
+    /* background-color: white; */
+    display: flex;
+    align-items: baseline;
+}
+
+#task-deadline-date i
+{
+    padding-left: 4px;
+    margin: 5px;
+    color: black;
+}
+
+#task-deadline-date p
+{
+    margin: 5px;
+    font-size: 13px;
+}
+
+#task-type
+{
+    width: 15%;
+    /* height: 100%; */
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#task-type div
+{
+    width: 100px;
+    height: 40px;
+    /* font-weight: bold; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    /* background-color: brown; */
+}
+
+/*** task type color started***/
+.Personal
+{
+    background-color: rgb(7, 96, 96);
+}
+
+.Work
+{
+    background-color: peru;
+}
+
+.School
+{
+    background-color: blueviolet;
+}
+
+.Cleaning
+{
+    background-color: royalblue;
+}
+
+.Other
+{
+    background-color: green;
+}
+
+.ChooseACategory
+{
+    background-color: white;
+}
+
+/*** task type color ended***/
+
+/**added task section ended**/
+
+
+/**Responsive things started**/
+
+@media screen and (max-width : 1100px)
+{
+    #main-container
+    {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width : 900px)
+{
+    #main-container
+    {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width : 750px)
+{
+    #main-container
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 700px)
+{
+    #category
+    {
+        width: 100%;
+        border-right: 0;
+    }
+
+    #due-date
+    {
+        width: 100%;
+        border-top: 0;
+    }
+
+    #check-box input
+    {
+        margin-top: 30%;
+        width: 20px;
+        height: 20px;
+    }
+
+    #main-detail-of-task
+    {
+        width : 75%
+    }
+
+    #one-task-list
+    {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width : 600px)
+{
+    #add-task
+    {
+        width: 40%;
+    }
+
+    #delete-task
+    {
+        width: 40%;
+    }
+
+    #task-type
+    {
+        width: 100px;
+    }
+
+    #task-type div
+    {
+        width: 90px;
+        height: 40px;
+    }
+}
+
+@media screen and (max-width : 500px)
+{
+    #check-box
+    {
+        width: 30px;
+    }
+
+    #main-detail-of-task
+    {
+        width: 400px;
+    }
+}
+
+/**Responsive things ended**/
